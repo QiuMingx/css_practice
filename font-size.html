@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        /* .in{font-size:0.5in;}
+        .cm{font-size:0.5cm;}
+        .mm{font-size:5mm;}
+        .pt{font-size:15pt;}
+        .pc{font-size:2pc;} */
+        /* p{font-size: 50px;} */
+        .larger{font-size: larger;}
+        .smaller{font-size: smaller;}
+        .em{font-size:1.5em;}
+        .percent{font-size: 150%;}
+        #fontSize{font-size: 20px;}
+        .percent{font-size: 150%;}
+    </style>
+</head>
+<body>
+    <!-- 相对单位 -->
+    <!-- 手机端一般不用px设置 -->
+    <p>字体大小，受显示器分辨率影响</p>
+    <p>字体大小<span class="larger">相对于父元素的文字大小变大</span></p>
+    <p>字体大小<span class="smaller">相对于父元素的文字大小变小</span></p>
+    <div id="fontSize">
+        字体
+        <h2>CSS字体大小</h2>
+        <p class="percent">文字大小<span class="em">相对值em</span></p>
+        <p class="percent">文字大小<span class="percent">相对值%</span></p>
+    </div>
+    <!-- 绝对单位 -->
+    <!-- <p>默认字体大小</p>
+    <p class="in">文字大小是0.5in</p>
+    <p class="cm">文字大小是0.5cm</p>
+    <p class="mm">文字大小是5mm</p>
+    <p class="pt">文字大小是15pt</p>
+    <p class="pc">文字大小是2pc</p> -->
+</body>
+</html>
