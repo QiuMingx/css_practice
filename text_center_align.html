@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多行和单行居中对齐方式</title>
+    <style type="text/css">
+        /* .warp{
+            height:400px;
+            width: 100%;
+            border:1px blue solid;
+            line-height: 400px;
+            text-align: center;
+        }
+     */
+     .warp{
+         height: 400px;
+         width: 100%;
+         border: 1px blue solid;
+         display: table;
+     }
+    .content{
+        vertical-align:middle;
+        text-align:center;
+        display: table-cell;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="warp">
+        <p> Welcome to Website</p>
+    </div> -->
+    <div class="warp">
+        <div class="content">
+            <img src="css/logo.jpg" alt="logo">
+            <h1>Welcome to Website</h1>
+            <h2>CSS层叠样式，用于网页样式设置，是网页更美观。</h2>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
