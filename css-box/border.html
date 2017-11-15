@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>边框属性</title>
+    <style type="text/css">
+        /* p{width:150px;height:80px;background-color:aqua;
+        line-height: 80px; border-width:thick; border-color:red;border-style:dotted;} */
+        p{width: 150px;height:80px;background-color:gray;}
+        /* border-[left|right|top|bottom]-width/height/style设置不同方向的边框样式 */
+        /* border 简写节省代码量 属性不分前后顺序 */
+        .one{border:10px #0099ee double;}
+        .two{border-left:2px red dotted;
+            border-right: #ececab inset 10px;
+            border-top:8px green dashed;
+            border-bottom:10px yellow double;}
+    </style>
+</head>
+<body>
+    <p>边框的属性border</p>
+    <p class="one">边框的属性border</p>
+    <p class="two">边框的属性border</p>
+</body>
+</html>

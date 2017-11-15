@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>display属性</title>
+    <style type="text/css">
+        div,span{
+            background-color: #00aaee;
+            border:1px solid #666;
+        }
+        div{
+            display: inline-block;
+            margin:30px;
+            padding: 40px;
+            font-size:16px;
+        }
+        /* 行内元素转换为块级元素 */
+        /* span{
+            display: block;
+            width:50px;
+            height:50px;
+            margin:20px;
+            padding:30px;
+        } */
+        span{
+            display:  none;
+        }
+        .one{font-size:0px;}
+        /* 鼠标滑过设置span 的displays属性 */
+        a:hover span{
+            display:inline;
+            
+        }
+        ul{
+            list-style-type: none;
+            width:200px;
+            background:red;
+        }
+        ul li{
+            display: none;
+            width:100%;
+            background-color:blue;
+        }
+        ul:hover li{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="one"> -->
+    <!-- 块级元素 占一行-->
+        <div>display属性-div</div>
+        <div>display属性-div</div>
+        <div>display属性-div</div>
+        <div>display属性-div</div>
+        <div>display属性-div</div>
+        <div>display属性-div</div>
+        <div>display属性-div</div>
+        <div>display属性-div</div>
+        <div>display属性-div</div>
+    <!-- </div> -->
+    <hr/>
+
+    <!-- 内联元素 一行内进行显示等一行显示不下时在下一行显示-->
+    <span>display属性-span</span>
+    <span>display属性-span</span>
+    <span>display属性-span</span>
+    <hr/>
+    <a href="#">点我...<span>和你做迷藏</span></a>
+    <ul>
+        <h1>家电</h1>
+        <li>冰箱</li>
+        <li>空调</li>
+        <li>洗衣机</li>
+    </ul>
+</body>
+</html>

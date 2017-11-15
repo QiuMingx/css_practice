@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外边距</title>
+    <style type="text/css">
+       .one{
+           background-color:#acacac;
+           width: 300px;
+           height: 300px;
+           /* margin:10px 8px 2px 4px; */
+            margin-bottom: 20px;
+        } 
+        /* 外边距设置为auto，则水平居中 */
+        .content{
+            background-color:#ececec;
+            width:100px;
+            height:100px;
+            margin:auto;
+        }
+        /* 垂直相邻的两个元素都设置外边距，则外边距为最大值 */
+        .two{
+            background-color:#acacac;
+            width: 300px;
+            height: 300px;
+           /* margin:10px 8px 2px 4px; */
+            margin-top:10px;
+        }
+        ul{
+            padding:0px;
+            width:300px;
+            height:400px;
+            background-color: pink;
+            padding-top:40px;
+        }
+        li{
+            list-style-type: none;
+            background-color:yellow;
+            margin-top:40px;
+            margin-left:40px;
+            width:200px;
+            height:60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"><div class="content">margin属性</div></div>
+    <div class="two"><div class="content">margin属性</div></div>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    
+</body>
+</html>

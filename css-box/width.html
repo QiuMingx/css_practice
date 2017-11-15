@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宽度</title>
+    <style type="text/css">
+        /* max-height 和 min-height不支持iE6 */
+        /* div{ width: 600px; background-color: #acacac;} */
+        /* p{background:#ececec; width:50%;}
+        .one{max-width:500px;}
+        .two{min-width:500px;}  */
+        /* p{background:#ececec; height:200px; float:left;}
+        .one{max-height:300px;}
+        .two{min-height:300px;}
+        .three{max-height:200px;min-height:600px;} */
+        p{background-color: #ececec; height:100px;width:200px;}
+        span{background-color:#acacac; height:200px;width:300px;}
+        /* CSS定义的width和height属性优先于img行内属性 */
+        img{width:200px;height:10px;}
+    </style>
+</head>
+<body>
+    <!-- 高宽度属性适用于块元素和替换元素 span不是适用 -->
+    <p>盒子模型的宽度width和高度height</p>
+    <span>盒子模型的宽度width和高度height</span>
+    <img src="../css_background/img/1.jpg" width="500px" alt=""> <img src="../css_background/img/2.jpg" height="200px" alt="">
+    <!-- <div>
+    <p>盒子模型的宽度width：400px</p>
+    <p class="one">盒子模型最大宽度max-width:500px</p>
+    <p class="two">盒子模型最小宽度min-width:250px</p>
+    <p class="three">盒子模型最小宽度min-width:250px</p>
+    </div> -->
+    <!-- <div>
+    <p>盒子模型的高度height：300px</p>
+    <p class="one">盒子模型最大高度max-height:100px</p>
+    <p class="two">盒子模型最小高度min-height:100px</p>
+    <p class="three">盒子模型最大小高度min-height和max-height</p>
+    </div> -->
+</body>
+</html>
