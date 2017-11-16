@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>侧边导航</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .page{
+            width:100%;
+            height:4044px;
+            background:url(2.jpg) center top no-repeat;
+        }
+        .sidebar{
+            width:160px;
+            height:auto;
+            position: fixed;
+            left:0;
+            top:50%;
+            margin-top: -200px;
+            font-family: 'Miscrosoft Yahei';
+        }
+        .nav-li{
+            width:160px;
+            height:auto;
+            border-bottom:1px dashed #FFF;
+            background: #333;
+            text-align: center;
+            line-height: 40px;
+            font-size:16px;
+            color:#FFF;
+            cursor: pointer;
+
+        }
+        .tit{
+            width:160px;
+            height:40px;
+        }
+        .nav-li:hover ul{
+            display: block;
+            /* background-color:rgba(255,255,255,.3); */
+        }
+        .nav-li ul{
+            width:160px;
+            height:auto;
+            background: #ececec;
+            display:none;
+
+        }
+        .nav-li ul li{
+            /* width:158px; */
+            height:40px;
+            border: 1px dashed #666;
+            color:#333;
+            text-align:center;
+            line-height: 40px;
+            position: relative;
+        }
+        .nav-li ul li:hover .list-3{
+            display: block;
+        }
+        .list-3{
+            width:160px;
+            height:auto;
+            background-color:antiquewhite;
+            /* 使用position父级元素也用position */
+            position: absolute;
+            left:160px;
+            top:0;
+            display: none;
+
+        }
+        .list-3Dom{
+            width:160px;
+            height:40px;
+            background-color:antiquewhite;
+            text-align:center;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="sidebar">
+            <div class="nav-li">
+                <div class="tit">栏目标题</div>
+                <ul>
+                    <li>二级目录 
+                        <div class="list-3">
+                            <div class="list-3Dom">三级栏目</div>
+                            <div class="list-3Dom">三级栏目</div>
+                            <div class="list-3Dom">三级栏目</div>
+                        </div>
+                    </li>
+                    <li>二级目录
+                            <div class="list-3">
+                                    <div class="list-3Dom">三级栏目1</div>
+                                    <div class="list-3Dom">三级栏目1</div>
+                                    <div class="list-3Dom">三级栏目1</div>
+                                </div>
+                    </li>
+                    <li>二级目录
+                            <div class="list-3">
+                                    <div class="list-3Dom">三级栏目1</div>
+                                    <div class="list-3Dom">三级栏目1</div>
+                                    <div class="list-3Dom">三级栏目1</div>
+                                </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-li">
+                <div class="tit">栏目标题2</div>
+                <ul>
+                        <li>二级目录2</li>
+                        <li>二级目录2</li>
+                        <li>二级目录2</li>
+                    </ul>
+            </div>
+            <div class="nav-li">
+                <div class="tit">栏目标题3</div>
+                <ul>
+                        <li>二级目录3</li>
+                        <li>二级目录3</li>
+                        <li>二级目录3</li>
+                    </ul>
+            </div>
+            <div class="nav-li">
+                <div class="tit">栏目标题4</div>
+                <ul>
+                        <li>二级目录4</li>
+                        <li>二级目录4</li>
+                        <li>二级目录4</li>
+                    </ul>
+            </div>
+            <div class="nav-li">
+                <div class="tit">栏目标题5</div>
+                <ul>
+                        <li>二级目录5</li>
+                        <li>二级目录5</li>
+                        <li>二级目录5</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
