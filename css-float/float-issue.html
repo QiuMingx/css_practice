@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+         }
+         .per{
+             width:500px;
+             height:auto;
+             /* float:left; */
+             border:1px solid #ccc;
+             /* 解决溢出 hidden:超出父元素则被隐藏 */
+              overflow:hidden; 
+              zoom:1;
+            
+         }
+        .one{
+            width:580px;
+            height:30px;
+            border:1px solid rgb(75, 23, 158);
+            float:left;
+            background:blue;
+            margin-left:10px;
+        }
+        .two{
+            width: 100px;
+            height: 100px;
+            background:red;
+            /* 清除浮动属性 */
+            /* clear:both; */
+        }
+    </style>
+  
+</head>
+<body>
+    <div class="per">
+        <div class="one"></div>
+        <!-- <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div> -->
+
+
+    </div>
+    <div class="two"></div>
+    
+</body>
+</html>
